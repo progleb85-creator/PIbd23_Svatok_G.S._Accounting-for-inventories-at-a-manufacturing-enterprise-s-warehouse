@@ -17,7 +17,7 @@ namespace OTP
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(CreateContainer().Resolve<Form1>());
+            Application.Run(CreateContainer().Resolve<FormMain>());
         }
 
         private static IUnityContainer CreateContainer()

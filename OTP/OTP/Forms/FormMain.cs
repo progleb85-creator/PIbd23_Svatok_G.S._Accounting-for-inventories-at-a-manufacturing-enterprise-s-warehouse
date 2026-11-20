@@ -2,11 +2,11 @@ using Unity;
 
 namespace OTP.Forms;
 
-public partial class Form1 : Form
+public partial class FormMain : Form
 {
     private readonly IUnityContainer _container;
 
-    public Form1(IUnityContainer container)
+    public FormMain(IUnityContainer container)
     {
         InitializeComponent();
         _container = container ??
