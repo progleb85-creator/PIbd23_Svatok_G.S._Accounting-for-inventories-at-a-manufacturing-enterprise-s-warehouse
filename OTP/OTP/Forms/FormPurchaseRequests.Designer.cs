@@ -17,65 +17,65 @@ namespace OTP.Forms
 
         private void InitializeComponent()
         {
-            dataGridViewData = new System.Windows.Forms.DataGridView();
-            panelButtons = new System.Windows.Forms.Panel();
-            buttonAdd = new System.Windows.Forms.Button();
+            dataGridViewData = new DataGridView();
+            panelButtons = new Panel();
+            buttonAdd = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewData).BeginInit();
             panelButtons.SuspendLayout();
             SuspendLayout();
-            //
+            // 
             // dataGridViewData
-            //
+            // 
             dataGridViewData.AllowUserToAddRows = false;
             dataGridViewData.AllowUserToDeleteRows = false;
             dataGridViewData.AllowUserToResizeColumns = false;
             dataGridViewData.AllowUserToResizeRows = false;
-            dataGridViewData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewData.Dock = System.Windows.Forms.DockStyle.Fill;
-            dataGridViewData.Location = new System.Drawing.Point(0, 0);
+            dataGridViewData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewData.Dock = DockStyle.Fill;
+            dataGridViewData.Location = new Point(0, 0);
             dataGridViewData.MultiSelect = false;
+            dataGridViewData.Name = "dataGridViewData";
             dataGridViewData.ReadOnly = true;
             dataGridViewData.RowHeadersVisible = false;
-            dataGridViewData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewData.Size = new System.Drawing.Size(680, 450);
-            dataGridViewData.Name = "dataGridViewData";
+            dataGridViewData.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewData.Size = new Size(680, 450);
             dataGridViewData.TabIndex = 0;
-            //
+            // 
             // panelButtons
-            //
-            panelButtons.Dock = System.Windows.Forms.DockStyle.Right;
-            panelButtons.Location = new System.Drawing.Point(680, 0);
-            panelButtons.Size = new System.Drawing.Size(120, 450);
-            panelButtons.Name = "panelButtons";
-            panelButtons.TabIndex = 1;
+            // 
             panelButtons.Controls.Add(buttonAdd);
-            //
+            panelButtons.Dock = DockStyle.Right;
+            panelButtons.Location = new Point(680, 0);
+            panelButtons.Name = "panelButtons";
+            panelButtons.Size = new Size(120, 450);
+            panelButtons.TabIndex = 1;
+            // 
             // buttonAdd
-            //
-            buttonAdd.Location = new System.Drawing.Point(10, 10);
-            buttonAdd.Size = new System.Drawing.Size(100, 40);
-            buttonAdd.Text = "Добавить";
-            buttonAdd.UseVisualStyleBackColor = true;
+            // 
+            buttonAdd.BackgroundImage = Properties.Resources._25340;
+            buttonAdd.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonAdd.Location = new Point(10, 10);
             buttonAdd.Name = "buttonAdd";
+            buttonAdd.Size = new Size(100, 88);
             buttonAdd.TabIndex = 2;
+            buttonAdd.UseVisualStyleBackColor = true;
             buttonAdd.Click += ButtonAdd_Click;
-            //
+            // 
             // FormPurchaseRequests
-            //
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 450);
-            Name = "FormPurchaseRequests";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            Text = "Заявки на закупку материалов";
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
             Controls.Add(dataGridViewData);
             Controls.Add(panelButtons);
+            Name = "FormPurchaseRequests";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Заявки на закупку материалов";
+            Load += FormPurchaseRequests_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewData).EndInit();
             panelButtons.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
-            Load += FormPurchaseRequests_Load;
         }
 
         #endregion
