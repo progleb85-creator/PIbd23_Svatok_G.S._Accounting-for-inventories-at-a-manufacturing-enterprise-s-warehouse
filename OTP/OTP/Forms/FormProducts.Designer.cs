@@ -17,89 +17,91 @@ namespace OTP.Forms
 
         private void InitializeComponent()
         {
-            dataGridViewData = new System.Windows.Forms.DataGridView();
-            panelButtons = new System.Windows.Forms.Panel();
-            buttonAdd = new System.Windows.Forms.Button();
-            buttonUpd = new System.Windows.Forms.Button();
-            buttonDel = new System.Windows.Forms.Button();
+            dataGridViewData = new DataGridView();
+            panelButtons = new Panel();
+            buttonAdd = new Button();
+            buttonUpd = new Button();
+            buttonDel = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewData).BeginInit();
             panelButtons.SuspendLayout();
             SuspendLayout();
-            //
+            // 
             // dataGridViewData
-            //
+            // 
             dataGridViewData.AllowUserToAddRows = false;
             dataGridViewData.AllowUserToDeleteRows = false;
             dataGridViewData.AllowUserToResizeColumns = false;
             dataGridViewData.AllowUserToResizeRows = false;
-            dataGridViewData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewData.Dock = System.Windows.Forms.DockStyle.Fill;
-            dataGridViewData.Location = new System.Drawing.Point(0, 0);
+            dataGridViewData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewData.Dock = DockStyle.Fill;
+            dataGridViewData.Location = new Point(0, 0);
             dataGridViewData.MultiSelect = false;
+            dataGridViewData.Name = "dataGridViewData";
             dataGridViewData.ReadOnly = true;
             dataGridViewData.RowHeadersVisible = false;
-            dataGridViewData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewData.Size = new System.Drawing.Size(680, 450);
-            dataGridViewData.Name = "dataGridViewData";
+            dataGridViewData.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewData.Size = new Size(680, 450);
             dataGridViewData.TabIndex = 0;
-            //
+            // 
             // panelButtons
-            //
-            panelButtons.Dock = System.Windows.Forms.DockStyle.Right;
-            panelButtons.Location = new System.Drawing.Point(680, 0);
-            panelButtons.Size = new System.Drawing.Size(120, 450);
-            panelButtons.Name = "panelButtons";
-            panelButtons.TabIndex = 1;
+            // 
             panelButtons.Controls.Add(buttonAdd);
             panelButtons.Controls.Add(buttonUpd);
             panelButtons.Controls.Add(buttonDel);
-            //
+            panelButtons.Dock = DockStyle.Right;
+            panelButtons.Location = new Point(680, 0);
+            panelButtons.Name = "panelButtons";
+            panelButtons.Size = new Size(120, 450);
+            panelButtons.TabIndex = 1;
+            // 
             // buttonAdd
-            //
-            buttonAdd.Location = new System.Drawing.Point(10, 10);
-            buttonAdd.Size = new System.Drawing.Size(100, 40);
-            buttonAdd.Text = "Добавить";
-            buttonAdd.UseVisualStyleBackColor = true;
+            // 
+            buttonAdd.BackgroundImage = Properties.Resources._25340;
+            buttonAdd.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonAdd.Location = new Point(10, 10);
             buttonAdd.Name = "buttonAdd";
+            buttonAdd.Size = new Size(100, 80);
             buttonAdd.TabIndex = 2;
+            buttonAdd.UseVisualStyleBackColor = true;
             buttonAdd.Click += ButtonAdd_Click;
-            //
+            // 
             // buttonUpd
-            //
-            buttonUpd.Location = new System.Drawing.Point(10, 60);
-            buttonUpd.Size = new System.Drawing.Size(100, 40);
-            buttonUpd.Text = "Изменить";
-            buttonUpd.UseVisualStyleBackColor = true;
+            // 
+            buttonUpd.BackgroundImage = Properties.Resources.images;
+            buttonUpd.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonUpd.Location = new Point(10, 96);
             buttonUpd.Name = "buttonUpd";
+            buttonUpd.Size = new Size(100, 83);
             buttonUpd.TabIndex = 3;
+            buttonUpd.UseVisualStyleBackColor = true;
             buttonUpd.Click += ButtonUpd_Click;
-            //
+            // 
             // buttonDel
-            //
-            buttonDel.Location = new System.Drawing.Point(10, 110);
-            buttonDel.Size = new System.Drawing.Size(100, 40);
-            buttonDel.Text = "Удалить";
-            buttonDel.UseVisualStyleBackColor = true;
+            // 
+            buttonDel.BackgroundImage = Properties.Resources.minus_sign;
+            buttonDel.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDel.Location = new Point(10, 185);
             buttonDel.Name = "buttonDel";
+            buttonDel.Size = new Size(100, 85);
             buttonDel.TabIndex = 4;
+            buttonDel.UseVisualStyleBackColor = true;
             buttonDel.Click += ButtonDel_Click;
-            //
+            // 
             // FormProducts
-            //
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 450);
-            Name = "FormProducts";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            Text = "Продукция";
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
             Controls.Add(dataGridViewData);
             Controls.Add(panelButtons);
+            Name = "FormProducts";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Продукция";
+            Load += FormProducts_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewData).EndInit();
             panelButtons.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
-            Load += FormProducts_Load;
         }
 
         #endregion
